@@ -6,8 +6,10 @@ const App = () => {
     return (
         <>
             <div className="container-fluid">
-                <SongList />
-                <SongDetail />
+                <div className="row">
+                    <SongList />
+                    <SongDetail />
+                </div>
             </div>
         </>
     );

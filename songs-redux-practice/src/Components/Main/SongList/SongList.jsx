@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const SongList = ({ songs, selectSong }) => {
     return (
         <>
-            <div className="songlists">
+            <div className="songlists col-lg-6 col-md-6 col-sm-6 col-6">
                 <h1>SongList</h1>
                 {songs.map((song) => (
                     <div className="songlists__div" key={song.id}>
