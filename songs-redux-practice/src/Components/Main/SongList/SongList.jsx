@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { selectSong } from "../../../Actions";
+import PropTypes from "prop-types";
 
 const SongList = ({ songs, selectSong }) => {
     return (
@@ -30,3 +31,8 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps, {
     selectSong,
 })(SongList);
+
+SongList.propTypes = {
+    songs: PropTypes.array.isRequired,
+    selectSong: PropTypes.func.isRequired,
+};

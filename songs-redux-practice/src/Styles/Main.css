@@ -13,7 +13,6 @@
 .songlists__button {
     float: right;
 }
-
 .songdetails {
     display: flex;
     flex-direction: column;

@@ -8,12 +8,14 @@ export const songsReducers = () => {
         { id: 4, title: "Ode To Sleep", duration: "3:46" },
     ];
 };
+
 export const selectedSongReducer = (selectedSong = null, action) => {
     if (action.type === "SONG_SELECTED") {
         return action.payload;
     }
     return selectedSong;
 };
+
 export default combineReducers({
     songs: songsReducers,
     selectedSong: selectedSongReducer,
