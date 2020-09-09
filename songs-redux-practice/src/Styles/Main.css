@@ -1,0 +1,20 @@
+.songlists {
+    display: flex;
+    flex-direction: column;
+}
+.songlists__div {
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: 10px 0;
+    padding: 20px 15px;
+    border: 2px solid rgb(124, 124, 124);
+    border-radius: 5px;
+}
+.songlists__button {
+    float: right;
+}
+
+.songdetails {
+    display: flex;
+    flex-direction: column;
+}
